@@ -6,8 +6,6 @@ const paragraphsTwo = document.querySelector('#p2')
 
 paragraphsOne.textContent = 'Loading...'
 paragraphsTwo.textContent = ''
-paragraphsThree.textContent = ''
-paragraphsFour.textContent = ''
 
 button.addEventListener('click', search)
 function search(e){
