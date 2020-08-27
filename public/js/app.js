@@ -12,7 +12,7 @@ button.addEventListener('click', search)
 function search(e){
     e.preventDefault()
     const location = inputValue.value
-    fetch('http://localhost:3000/weather?address='+ location).then((response) =>{
+    fetch('/weather?address='+ location).then((response) =>{
         response.json().then((data) =>{
             if(!location){
                 paragraphsOne.textContent = 'Enter an address'
@@ -27,20 +27,7 @@ function search(e){
 
 }
 
-// console.log('Client side javascript file is loaded!')
-// fetch('http://localhost:3000/weather?address=boston').then((response)=>{
-//     response.json().then((data) =>{
-//         if(data.error){
-//             console.log(data.error)
-//         }else{
-//             console.log(data.forecast)
-//             console.log(data.Location)
-//         }
-//     })
-// })
 
-
-// const address = 'yaoundé';
 
 // fetch('https://api.mapbox.com/geocoding/v5/mapbox.places/'+address+'.json?access_token=pk.eyJ1IjoibmdhaG1pbG8iLCJhIjoiY2tlOHBqY3VsMGxiMDJ5cHhneXNqd2NoeSJ9.v0ckkGZgQYlxrxxDLdf0xQ&limit=1')
 // .then((response) =>{
