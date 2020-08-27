@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js" async></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <%- include('./partials/header.ejs')%>
+
+        <form>
+            <input type="text" name="location" placeholder="Location">
+            <button type="submit" id = 'button'>valider</button>
+        </form>
+        <div class = 'responses'>
+            <p id = 'p1'></p>
+            <p id = 'p2'></p> 
+        </div>
+        
+    </div>
+    <hr>
+    <%- include('./partials/header.ejs')%>
+</body>
+
+</html>
