@@ -3,9 +3,6 @@ const inputValue = document.querySelector('input')
 const Forecast = document.querySelector('p1')
 const paragraphsOne = document.querySelector('#p1')
 const paragraphsTwo = document.querySelector('#p2')
-const paragraphsThree = document.querySelector('#p3')
-const paragraphsFour = document.querySelector('#p4')
-
 
 paragraphsOne.textContent = 'Loading...'
 paragraphsTwo.textContent = ''
