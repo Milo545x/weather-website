@@ -31,7 +31,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'Entrez une adresse ou un code postal dans la barre de recherche et puis validez',
+        helpText: 'c\'est tout simple. Entrez une adresse ou un code postal dans la barre de recherche et puis validez',
         title: 'Help',
         name: 'Milo Chris'
     })
@@ -67,18 +67,7 @@ app.get('/weather', (req, res) => {
 }
 
 })
-app.get('/products', (req, res) =>{
-    if((!req.query.search) || (! req.query.rating)){
-        return res.send({error : 'Provides a search please or rating'})
-    }
-    res.send({products : [
-        {
-            products_name : req.query.search,
-            rating : req.query.rating
-        }
-            
-    ]})
-})
+
 
 // app.get('/help/*', (req, res) => {
 //     res.render('404', {
