@@ -11,8 +11,9 @@ const forecast = (latitude, longitude, callback)=>{
             const summary = body.daily[0].weather[0].description
             const temperature = body.current.temp
             const precipProb = body.daily[0].pop
-
-            callback(undefined, summary + ', Il fait ' + temperature + ' degrés celcius et il y\'a ' + precipProb + '% de chances de pleuvoir')
+            const tempMin = body.daily[0].temp.min
+            const tempMax = body.daily[0].temp.max
+            callback(undefined, summary + ', Il fait ' + temperature + ' degrés celcius et il y\'a ' + precipProb + '% de chances de pleuvoir.'+ ' La temperature minimum de la journée est de ' + tempMin + ' degrés et la temperature maximum est de ' + tempMax + ' degrés')
         }
     })
 }
