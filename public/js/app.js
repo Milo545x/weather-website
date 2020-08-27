@@ -1,4 +1,3 @@
-console.log('client js for user')
 const button = document.querySelector('#button')
 const inputValue = document.querySelector('input')
 const Forecast = document.querySelector('p1')
